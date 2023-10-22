@@ -1,0 +1,134 @@
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    .introducao img {
+        display: none;
+    }
+
+    .cards-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    } 
+
+    .card {
+        width: 500px;
+        height: 400px;
+    }
+
+    .introducao-texto h2, .cursos, .clientes-titulo {
+        font-size: 35px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .cursos {
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .introducao-texto p {
+        font-size: 15px;
+        margin-top: -65px;
+    }
+
+    .nav-pills {
+        display: none;
+    }
+
+    .dropdown {
+        margin-top: -30px;
+    }
+
+    .dropdown-toggle, .dropdown-toggle::after, .dropdown {
+        color: #9c1060;
+    }
+
+    .dropdown-toggle img {
+        width: 45px;
+        height: 45px;
+        margin-top: 10px;
+    }
+
+    header img {
+        margin-left: 30px;
+    }
+
+    header h2 {
+        margin-right: -30px;
+        margin-top: 15px;
+    }
+
+    .avaliacao-boa {
+        margin-left: 10px;
+        width: 180px;
+        margin-right: 0;
+}
+
+    .avaliacao-ruim {
+        width: 180px;
+        margin-right: 10px;
+    }
+
+    .avaliacao {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    footer img {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+    }
+
+    .email-pin {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .email {
+        width: 40px;
+        height: 30px;
+    }
+    
+    .pin {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .email-conjunto, .pin-conjunto {
+        display: flex;
+    }
+    
+    .email-conjunto p, .pin-conjunto p {
+        font-size: 15px;
+    }
+    
+    .pin-conjunto p {
+        margin-top: 15px;
+    }
+
+    article {
+        margin-top: 0;
+    }
+
+    .avaliacao-boa {
+        margin-left: 10px;
+        width: 250px;
+        margin-right: 0;
+    }
+
+    .avaliacao-ruim {
+        width: 250px;
+        margin-right: 10px;
+    }
+
+    .card-text {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,98 @@
+@media screen and (min-width: 1200px) {
+    .dropdown, .dropdown-toggle, a img, .dropdown-menu, header h2 {
+        display: none;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .card {
+        width: 380px;
+    }
+
+    .cards-wrapper {
+        gap: 10px;
+    }
+
+    .card-text {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .introducao {
+        display: flex;
+        margin-top: 10%;
+        margin-bottom: 0;
+    }
+    
+    .introducao-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10%;
+        gap: 20px;
+    }
+    
+    .introducao-texto h2 {
+        font-size: 60px;
+    }
+    
+    .introducao-texto p {
+        margin: 0 5%;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    footer {
+        margin-top: 10%;
+        height: 200px;
+        width: 100%;
+        background-color: #9c1060;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer img {
+        margin-right: 50px;
+        width: 150px;
+        height: 150px;
+    }    
+
+    .email-pin {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        gap: 20px;
+    }
+
+    .email {
+        width: 80px;
+        height: 50px;
+    }
+    
+    .pin {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .email-conjunto, .pin-conjunto {
+        display: flex;
+    }
+    
+    .email-conjunto p, .pin-conjunto p {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    
+    .pin-conjunto p {
+        margin-top: 15px;
+    }
+}

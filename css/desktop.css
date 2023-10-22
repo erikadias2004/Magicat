@@ -1,0 +1,71 @@
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .dropdown, .dropdown-toggle, a img, .dropdown-menu, header h2 {
+        display: none;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    .introducao-texto {
+        text-align: center;
+        margin-top: -100px;
+    }
+
+    .introducao-texto p {
+        margin-top: -50px;
+    }
+
+    .cards-wrapper {
+        display: flex;
+        gap: 5px;
+    }
+
+    .card {
+        width: 330px;
+    }
+
+    footer img {
+        width: 200px;
+        height: 200px;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    .email-pin {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        gap: 50px;
+    }
+
+    .email {
+        width: 80px;
+        height: 50px;
+    }
+    
+    .pin {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .email-conjunto, .pin-conjunto {
+        display: flex;
+    }
+    
+    .email-conjunto p, .pin-conjunto p {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    
+    .pin-conjunto p {
+        margin-top: 15px;
+    }
+}
