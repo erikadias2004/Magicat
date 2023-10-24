@@ -1,7 +1,16 @@
-@media screen and (max-width: 1200px) and (min-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 768px){
     .dropdown, .dropdown-toggle, a img, .dropdown-menu, header h2 {
         display: none;
     }
+
+    .cards-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    } 
+
 
     header img {
         width: 120px;
@@ -21,40 +30,35 @@
         margin-top: -50px;
     }
 
-    .cards-wrapper {
-        display: flex;
-        gap: 5px;
-    }
-
     .card {
-        width: 330px;
-    }
-
-    footer img {
-        width: 180px;
-        height: 180px;
-        margin-right: 50px;
+        width: 500px;
+        height: 500px;
     }
 
     footer {
-        height: 200px;
+        height: 150px;
+    }
+
+    footer img {
+        width: 80px;
+        height: 80px;
+        margin-right: 50px;
     }
 
     .email-pin {
         display: flex;
         flex-direction: column;
         margin-left: 50px;
-        gap: 20px;
     }
 
     .email {
-        width: 80px;
-        height: 50px;
+        width: 40px;
+        height: 30px;
     }
     
     .pin {
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
     }
     
     .email-conjunto, .pin-conjunto {
@@ -62,12 +66,12 @@
     }
     
     .email-conjunto p, .pin-conjunto p {
-        font-size: 25px;
-        margin-top: 10px;
+        font-size: 15px;
+        margin-left: -30px;
     }
     
     .pin-conjunto p {
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .contato {
@@ -78,13 +82,21 @@
         margin-bottom: -20px;
     }
 
+    .card-text {
+        margin-bottom: 20px;
+    }
+
+    .clientes-titulo {
+        text-align: center;
+    }
+
     .avaliacao-boa {
         margin: 0;
-        width: 300px;
+        width: 250px;
     }
 
     .avaliacao-ruim {
-        width: 300px;
+        width: 250px;
         margin: 0;
     }
 
@@ -95,7 +107,7 @@
     }
 
     .professores img {
-        width: 280px;
-        height: 280px;
+        width: 200px;
+        height: 200px;
     }
 }

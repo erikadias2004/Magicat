@@ -61,10 +61,10 @@
     }
     
     footer img {
+        width: 180px;
+        height: 180px;
         margin-right: 50px;
-        width: 150px;
-        height: 150px;
-    }    
+    }
 
     .email-pin {
         display: flex;
@@ -89,10 +89,34 @@
     
     .email-conjunto p, .pin-conjunto p {
         font-size: 25px;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     
     .pin-conjunto p {
-        margin-top: 15px;
+        margin-top: 20px;
+    }
+
+    .contato {
+        margin-top: 50px;
+    }
+
+    a img {
+        margin-bottom: -20px;
+    }
+
+    .avaliacao-boa {
+        margin: 0;
+        width: 300px;
+    }
+
+    .avaliacao-ruim {
+        width: 300px;
+        margin: 0;
+    }
+
+    .avaliacao {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 150px;
     }
 }

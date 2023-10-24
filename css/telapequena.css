@@ -120,4 +120,35 @@
         margin: 0;
         margin-bottom: 10px;
     }
+
+    .contato {
+        margin-top: 50px;
+    }
+
+    a img {
+        margin-bottom: -20px;
+    }
+
+    .quem-somos-img {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .img-header {
+        margin-bottom: 5px;
+    }
+
+    .quem-somos {
+        margin-bottom: -50px;
+    }
+
+    .professores {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .professores img {
+        width: 200px;
+        height: 200px;
+    }
 }

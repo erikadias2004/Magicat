@@ -143,6 +143,7 @@ section h2 {
 input {
     width: 300px;
     height: 30px;
+    margin-bottom: 20px;
 }
 
 label {
@@ -153,7 +154,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     margin-top: 20px;
 }
 
@@ -207,3 +208,4 @@ article p, article li {
 article h2 {
     margin-bottom: 20px;
 }
+
