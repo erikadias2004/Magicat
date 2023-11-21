@@ -1,51 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/telapequena.css">
-    <link rel="stylesheet" href="css/celular.css">
-    <link rel="stylesheet" href="css/tablet.css">
-    <link rel="stylesheet" href="css/desktop.css">
-    <link rel="stylesheet" href="css/telagrande.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}
+Home
+{% endblock %}
 
-  <!-- Cabeçalho -->
-    <header class="navbar navbar-dark bg-primary">
-        <img src="./img/witch-hat.png" alt="">
-        <h2>Home</h2>
-        <nav>
-          <ul class="nav nav-pills">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="quemSomos.html">Quem somos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="contato" href="contato.html">Contato</a>
-              </li>
-            </ul>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-              <img src="img/barra-de-menu.png" alt="">
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Home</a></li>
-              <li><a class="dropdown-item" href="quemSomos.html">Quem somos</a></li>
-             <li><a class="dropdown-item" href="contato.html">Contato</a></li>
-           </ul>
-          </li>   
-      </nav>   
-    </header>
-
-
+{% block content %}
     <main>
       <section>
         <article> 
@@ -58,13 +16,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./img/Promocoes.png" class="d-block w-100" alt="...">
+                <img src="{{url_for('static', filename='img/Promocoes.png')}}" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./img/Turmas.png" class="d-block w-100" alt="...">
+                <img src="{{url_for('static', filename='img/Turmas.png')}}" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./img/Pocoes.png" class="d-block w-100" alt="...">
+                <img src="{{url_for('static', filename='img/Pocoes.png')}}" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -86,7 +44,7 @@
               <br>
               <p><strong>Pronto para começar? </strong></p>
             </div>
-            <img src="./img/cat.png" alt="">
+            <img src="{{url_for('static', filename='img/cat.png')}}" alt="">
           </article>
 
           <!-- Nossos cursos -->
@@ -94,7 +52,7 @@
         <h2 class="cursos">Nossos cursos</h2>
         <div class="cards-wrapper">
           <div class="card">
-            <img src="img/Promocoes.png" class="card-img-top" alt="...">
+            <img src="{{url_for('static', filename='img/Promocoes.png')}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Alquimia Arcana</h5>
               <p class="card-text">Explore a criação de poções e elixires místicos a partir de ingredientes exóticos e raros encontrados em outros planos de existência</p>
@@ -102,7 +60,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="img/Promocoes.png" class="card-img-top" alt="...">
+            <img src="{{url_for('static', filename='img/Promocoes.png')}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Arte da Memória Cristalizada</h5>
               <p class="card-text">Aprenda a armazenar informações em cristais de memória e acessá-las usando técnicas de pensamento mágico.</p>
@@ -110,7 +68,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="img/Promocoes.png" class="card-img-top" alt="...">
+            <img src="{{url_for('static', filename='img/Promocoes.png')}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Teleportação Quântica</h5>
               <p class="card-text">Aprenda a dominar a arte de se deslocar instantaneamente para diferentes dimensões e mundos paralelos.</p>
@@ -124,27 +82,9 @@
       <article>
         <h2 class="clientes-titulo">O que nossos clientes dizem:</h2>
         <div class="avaliacao">
-          <img class="avaliacao-boa" src="./img/Group 2.png" alt="">
-          <img class="avaliacao-ruim" src="./img/Group 3.png" alt="">
+          <img class="avaliacao-boa" src="{{url_for('static', filename='img/Group 2.png')}}" alt="">
+          <img class="avaliacao-ruim" src="{{url_for('static', filename='img/Group 3.png')}}" alt="">
         </div>
       </article>
 
-
-      <!-- Footer -->
-        <footer>
-          <div class="email-pin">
-            <div class="email-conjunto">
-              <img class="email" src="./img/email 1.png" alt="">
-              <p>meuemail@gmail.com</p>
-            </div>
-            <div class="pin-conjunto">
-              <img class="pin" src="./img/pin 1.png" alt="">
-              <p>Miaulândia, nº 123</p>
-            </div>
-          </div>
-          <img src="./img/Group 4.png" alt="">
-        </footer>
-      </section>
-    </main>
-</body>
-</html>
+{% endblock %}

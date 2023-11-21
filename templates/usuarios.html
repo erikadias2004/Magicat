@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}
+Usuários
+{% endblock %}
+
+{% block content %}
+<div class="tabela">
+    <table class="table table-sm">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Email</th>
+            <th scope="col">Assunto</th>
+            <th scope="col">Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for usuarios in usuariosDetails %}
+            <tr>
+                <th scope="row">{{usuarios[0]}}</td>
+                <td>{{usuarios[1]}}</td>
+                <td>{{usuarios[2]}}</td>
+                <td>{{usuarios[3]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

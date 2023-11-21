@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}
+Quem somos
+{% endblock %}
+
+{% block content %}
+
+    <!-- Quem somos -->
+    <main>
+        <section>
+            <article>
+                    <h2>Quem somos</h2>
+                    <p>A Magicat é uma escola em que acreditamos que cada gato tem um poder grande o suficiente para transformar seu mundo, mesmo sem magia. Pensando assim, chegamos a conclusão de que o potencial de um gato com magia é ainda maior do que se pode imaginar, nos incentivando a ajudar cada felino no seu caminho mágico. Nossa missão é capacitar gatos de todas as raças e idades a descobrir, desenvolver e aprimorar suas habilidades mágicas. Acreditamos que, assim como os humanos, os gatos têm um poder interior que pode ser despertado e explorado.</p>
+            </article>
+
+            <!-- O que oferecemos -->
+            <article>
+                    <h2>O que oferecemos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro et perferendis tenetur! Repellat totam eos sunt consectetur praesentium iste corporis, mollitia eligendi soluta quibusdam reprehenderit sit ea quam repellendus voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque soluta, fuga harum esse nisi veniam, inventore similique modi nihil magni atque sit minus quod ullam veritatis hic quis voluptas. Dolore!</p>
+            </article>
+
+            <!-- Porque escolher a Magicat -->
+                <article>
+                    <h2>Porque escolher a Magicat?</h2>
+                    <ol>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic adipisci nisi fugit blanditiis similique voluptatem temporibus incidunt tenetur, consequuntur inventore facilis sint! Nihil, nam iste nulla laudantium corrupti iusto maxime!</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla minima eaque veniam, eum rem est a aperiam perspiciatis sit ullam, deleniti assumenda suscipit quibusdam alias commodi exercitationem eius qui dicta.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laudantium commodi earum illum quidem, molestias nemo porro voluptate vel nulla doloribus vitae accusamus quis tempore obcaecati praesentium ipsam nam. Mollitia.</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse eum, quis, facilis labore quaerat voluptatum temporibus tenetur hic quam veniam omnis architecto! Dolor vero ad soluta exercitationem ut dolore dolorem!</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sit beatae quas nulla molestiae nesciunt mollitia, maiores fuga consequuntur ipsa numquam possimus quod voluptates eos, voluptas, non dolore pariatur iusto.</li>
+                    </ol>
+                </article>
+
+            <!-- Nosso time -->
+            <article>
+                <h2 class="time">Nosso time</h2>
+                <div class="professores">
+                    <div class="Al-Capone">
+                        <img src="{{url_for('static', filename='img/Ellipse 2.png')}}" alt="">
+                        <h2>Al Capone</h2>
+                        <button>Currículo</button>
+                    </div>
+                    <div class="Nikita">
+                        <img src="{{url_for('static', filename='img/Ellipse 3.png')}}" alt="">
+                        <h2>Nikita</h2>
+                        <button>Currículo</button>
+                    </div>
+                    <div class="Babalu">
+                        <img src="{{url_for('static', filename='img/Ellipse 4.png')}}" alt="">
+                        <h2>Babalu</h2>
+                        <button>Currículo</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+{% endblock %}

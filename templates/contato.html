@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+Contato
+{% endblock %}
+
+{% block content %}
+
+    <!-- Formulário de contato -->
+    <section>
+        <h2 class="contato">Entre em contato!</h2>
+          <form action="/contato" method="post">
+            <label for="">E-mail</label> <br>
+            <input type="email" name="email"> <br>
+            <label for="">Assunto</label> <br>
+            <input type="text" name="assunto"> <br>
+            <label for="">Descrição</label> <br>
+            <input type="text" name="descricao"> <br>
+            <div class="botao">
+                <button type="submit">Enviar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+            </form>
+    </section>
+
+{% endblock %}

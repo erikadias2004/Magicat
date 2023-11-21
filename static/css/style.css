@@ -75,7 +75,7 @@ header img {
 
 footer {
     margin-top: 10%;
-    height: 150px;
+    height: 40px;
     width: 100%;
     background-color: #9c1060;
     display: flex;
@@ -209,3 +209,16 @@ article h2 {
     margin-bottom: 20px;
 }
 
+.tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 100px auto;
+    width: 50vw;
+}
+
+table th, table td {
+    text-align: center;
+    color: white;
+}
